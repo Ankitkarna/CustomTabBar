@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D241CCB21FABE980078FD5A /* PBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D241CCA21FABE980078FD5A /* PBTabBarController.swift */; };
+		2D241CCD21FABEB50078FD5A /* PBTabBarControllerBottomLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D241CCC21FABEB50078FD5A /* PBTabBarControllerBottomLine.swift */; };
+		2DA10DBA21FEAAF400CAB574 /* PBTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA10DB921FEAAF400CAB574 /* PBTabBarItem.swift */; };
+		2DA10DBC21FEB0DD00CAB574 /* PBTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA10DBB21FEB0DD00CAB574 /* PBTabBarView.swift */; };
 		2DA3A11621F9A568009941D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA3A11521F9A568009941D4 /* AppDelegate.swift */; };
 		2DA3A11821F9A568009941D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA3A11721F9A568009941D4 /* ViewController.swift */; };
 		2DA3A11B21F9A568009941D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA3A11921F9A568009941D4 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D241CCA21FABE980078FD5A /* PBTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBTabBarController.swift; sourceTree = "<group>"; };
+		2D241CCC21FABEB50078FD5A /* PBTabBarControllerBottomLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBTabBarControllerBottomLine.swift; sourceTree = "<group>"; };
+		2DA10DB921FEAAF400CAB574 /* PBTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBTabBarItem.swift; sourceTree = "<group>"; };
+		2DA10DBB21FEB0DD00CAB574 /* PBTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBTabBarView.swift; sourceTree = "<group>"; };
 		2DA3A11221F9A568009941D4 /* CustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA3A11521F9A568009941D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DA3A11721F9A568009941D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +68,10 @@
 				2DA3A11C21F9A56A009941D4 /* Assets.xcassets */,
 				2DA3A11E21F9A56A009941D4 /* LaunchScreen.storyboard */,
 				2DA3A12121F9A56A009941D4 /* Info.plist */,
+				2D241CCA21FABE980078FD5A /* PBTabBarController.swift */,
+				2D241CCC21FABEB50078FD5A /* PBTabBarControllerBottomLine.swift */,
+				2DA10DB921FEAAF400CAB574 /* PBTabBarItem.swift */,
+				2DA10DBB21FEB0DD00CAB574 /* PBTabBarView.swift */,
 			);
 			path = CustomTabBar;
 			sourceTree = "<group>";
@@ -135,8 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DA10DBC21FEB0DD00CAB574 /* PBTabBarView.swift in Sources */,
+				2D241CCD21FABEB50078FD5A /* PBTabBarControllerBottomLine.swift in Sources */,
 				2DA3A11821F9A568009941D4 /* ViewController.swift in Sources */,
+				2D241CCB21FABE980078FD5A /* PBTabBarController.swift in Sources */,
 				2DA3A11621F9A568009941D4 /* AppDelegate.swift in Sources */,
+				2DA10DBA21FEAAF400CAB574 /* PBTabBarItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
