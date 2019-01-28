@@ -1,5 +1,5 @@
 //
-//  PBTabBarView.swift
+//  PBCenterTabBarView.swift
 //  CustomTabBar
 //
 //  Created by Ankit Karna on 1/28/19.
@@ -8,34 +8,16 @@
 
 import UIKit
 
-class PBTabBarView: UIView {
+class PBCenterTabBarView: PBTabBarView {
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        makeCircular()
+    }
 
-    var image: UIImage?
-    var title: String?
-    
-    var defaultBackgroundColor: UIColor?
-
-    var imageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
-    }()
-    
-    var titleLabel: UILabel = {
-        let textLabel = UILabel()
-        textLabel.textAlignment = NSTextAlignment.center
-        textLabel.translatesAutoresizingMaskIntoConstraints = false
-        return textLabel
-    }()
-    
-    var containerView: UIView = {
-        let containerView = UIView()
-        containerView.translatesAutoresizingMaskIntoConstraints = false
-        return containerView
-    }()
-    
-    
+    override func draw(_ rect: CGRect) {
+        drawIcons()
+    }
     
     private func drawIcons() {
         containerView.addSubview(imageView)
@@ -44,32 +26,38 @@ class PBTabBarView: UIView {
         
         imageView.image = image
         titleLabel.text = title
-        containerView.backgroundColor = backgroundColor
+        containerView.backgroundColor = .white
         
         //container view constraints
-        containerView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        containerView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.8).isActive = true
         containerView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         containerView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        containerView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-
+        containerView.heightAnchor.constraint(equalTo: containerView.widthAnchor).isActive = true
+        
         //image view constraints
         imageView.widthAnchor.constraint(equalTo: containerView.widthAnchor).isActive = true
         imageView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
         imageView.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
         imageView.bottomAnchor.constraint(equalTo: titleLabel.topAnchor).isActive = true
-
+        
         //title label constraints
         titleLabel.widthAnchor.constraint(equalTo: containerView.widthAnchor).isActive = true
         titleLabel.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
         titleLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor).isActive = true
-
+        
         imageView.setContentHuggingPriority(.defaultHigh, for: .vertical)
         titleLabel.setContentHuggingPriority(.defaultLow, for: .vertical)
         
+        self.layer.masksToBounds = false
+        self.layer.shadowColor = UIColor.lightGray.cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 0)
+        layer.shadowOpacity = 0.4
+        layer.shadowRadius = 4.0
+        
     }
-
-    override func draw(_ rect: CGRect) {
-        containerView.subviews.forEach {$0.removeFromSuperview()}
-        self.drawIcons()
+    
+    private func makeCircular() {
+        containerView.layer.cornerRadius = containerView.frame.size.height/2.0
+        containerView.layer.masksToBounds = true
     }
 }

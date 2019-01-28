@@ -16,6 +16,7 @@
 		2DA3A11B21F9A568009941D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA3A11921F9A568009941D4 /* Main.storyboard */; };
 		2DA3A11D21F9A56A009941D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA3A11C21F9A56A009941D4 /* Assets.xcassets */; };
 		2DA3A12021F9A56A009941D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA3A11E21F9A56A009941D4 /* LaunchScreen.storyboard */; };
+		A457622C21FF76EB0021CAC9 /* PBCenterTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A457622B21FF76EB0021CAC9 /* PBCenterTabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2DA3A11C21F9A56A009941D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DA3A11F21F9A56A009941D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DA3A12121F9A56A009941D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A457622B21FF76EB0021CAC9 /* PBCenterTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBCenterTabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				2D241CCC21FABEB50078FD5A /* PBTabBarControllerBottomLine.swift */,
 				2DA10DB921FEAAF400CAB574 /* PBTabBarItem.swift */,
 				2DA10DBB21FEB0DD00CAB574 /* PBTabBarView.swift */,
+				A457622B21FF76EB0021CAC9 /* PBCenterTabBarView.swift */,
 			);
 			path = CustomTabBar;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				2DA3A11821F9A568009941D4 /* ViewController.swift in Sources */,
 				2D241CCB21FABE980078FD5A /* PBTabBarController.swift in Sources */,
 				2DA3A11621F9A568009941D4 /* AppDelegate.swift in Sources */,
+				A457622C21FF76EB0021CAC9 /* PBCenterTabBarView.swift in Sources */,
 				2DA10DBA21FEAAF400CAB574 /* PBTabBarItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
